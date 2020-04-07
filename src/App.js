@@ -14,6 +14,12 @@ export default class App extends Component {
     }
 
     render(){
-        
+        return(
+            <div>
+                {this.state.people.map((person, id) => {
+                    <h1 key={id}>{person.name}</h1>
+                })}
+            </div>
+        )
     }
 }
